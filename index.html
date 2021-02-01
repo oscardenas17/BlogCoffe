@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
    
+    <!--Prefetch -->
+    <link rel="prefetch" href="nosotros.html" as="document">
+
     <!-- Preload -->
     <link rel="preload" href="css/normalize.css" as="style">
     <link rel="stylesheet" href="css/normalize.css">
@@ -18,7 +21,7 @@
     <link rel="preload" href="css/style.css" as="style">
     <link rel="stylesheet" href="css/style.css">
 
-    <link rel="preload" href="img/blog1.jpg" as="image">
+    <!-- <link rel="preload" href="img/blog1.jpg" as="image"> -->
 
 </head>
 <body>
@@ -52,7 +55,10 @@
 
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <img loading="lazy" src="img/blog1.jpg" alt="Imagen Blog">
+                    <picture>   
+                        <source loading="lazy" srcset="img/blog1.webp" type="image/webp">
+                        <img loading="lazy" src="img/blog1.jpg" alt="Imagen Blog">
+                    </picture>                  
                 </div>
 
                 <div class="entrada__contenido">
@@ -65,7 +71,10 @@
 
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <img  loading="lazy" src="img/blog2.jpg" alt="Imagen Blog">
+                    <picture>   
+                        <source loading="lazy" srcset="img/blog2.webp" type="image/webp">
+                        <img loading="lazy" src="img/blog2.jpg" alt="Imagen Blog">
+                    </picture>  
                 </div>
 
                 <div class="entrada__contenido">
@@ -78,7 +87,10 @@
 
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <img loading="lazy" src="img/blog3.jpg" alt="Imagen Blog">
+                    <picture>   
+                        <source loading="lazy" srcset="img/blog3.webp" type="image/webp">
+                        <img loading="lazy" src="img/blog3.jpg" alt="Imagen Blog">
+                    </picture>  
                 </div>
 
                 <div class="entrada__contenido">
